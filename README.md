@@ -25,7 +25,14 @@ This project integrates bKash payment gateway into Dhru CMS, enabling seamless t
    `cp .env.example .env`
 5. Update `.env` with your bKash credentials:
 
-BKASH_KEY=<your_bkash_key> BKASH_SECRET=<your_bkash_secret> BKASH_MERCHANT_ID=<your_merchant_id>
+**Configuration**
+# bKash API Credentials
+BKASH_API_KEY=your_api_key
+BKASH_API_SECRET=your_api_secret
+BKASH_ENVIRONMENT=sandbox  # or 'live' for production
+BKASH_SUCCESS_URL=http://yourdomain.com/payment/success
+BKASH_FAILURE_URL=http://yourdomain.com/payment/failure
+BKASH_LOG_LEVEL=debug
 
 
 **Usage**  
